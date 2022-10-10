@@ -1,9 +1,15 @@
 import React from 'react';
-
+import './ErrorPage.css'
+import { FaceFrownIcon } from '@heroicons/react/24/solid'
 const ErrorPage = () => {
     return (
         <div>
-            <h2>This is error page</h2>
+            <div className='d-flex align-items-center justify-content-center'>
+                <div>
+                    <FaceFrownIcon className='error-icon img-fluid'></FaceFrownIcon>
+                    <h1>NOTHING FOUND IN THIS PAGE</h1>
+                </div>
+            </div>
         </div>
     );
 };

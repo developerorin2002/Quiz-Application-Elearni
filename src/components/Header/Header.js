@@ -14,10 +14,10 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto custom-link">
-            <Link to='/home'>Home</Link>
-            <Link to='/quiz'>Quiz</Link>
-            <Link to='/blog'>Blog</Link>
-            <Link to='/statistics'>Statistics</Link>
+            <Link className='text-center' to='/home'>Home</Link>
+            <Link className='text-center' to='/quiz'>Quiz</Link>
+            <Link className='text-center' to='/blog'>Blog</Link>
+            <Link className='text-center' to='/statistics'>Statistics</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
