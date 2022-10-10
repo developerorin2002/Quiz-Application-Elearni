@@ -1,0 +1,11 @@
+.header-bg{
+    background-color: black;
+}
+.navbar-toggler{
+    background-color: aliceblue !important;
+}
+.custom-link > a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
