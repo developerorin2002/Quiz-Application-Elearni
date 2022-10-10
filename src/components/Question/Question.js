@@ -10,7 +10,6 @@ const Question = ({questionMain}) => {
         console.log(value , id);
         if(value){
             const findQues = allQuizData.find(qs => qs.id === id);
-            console.log(findQues);
             if(findQues){
                 console.log(findQues.correctAnswer , value);
                 const correctAns = findQues.correctAnswer;
@@ -20,8 +19,6 @@ const Question = ({questionMain}) => {
                 }else{
                     toast.error('wrongAnswere' ,{autoClose:500})
                 }
-                
-                
             }
         }
 
