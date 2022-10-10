@@ -18,7 +18,7 @@ const Question = ({questionMain}) => {
                 if(correctAns === value){
                     toast.success('Correct Answere',{autoClose:500})
                 }else{
-                    toast.warning('wrongAns' ,{autoClose:500})
+                    toast.error('wrongAnswere' ,{autoClose:500})
                 }
                 
                 
