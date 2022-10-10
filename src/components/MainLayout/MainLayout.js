@@ -1,12 +1,14 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
-import Header from '../Header/Header'
+import React, { createContext } from 'react';
+import { Outlet, useLoaderData } from 'react-router-dom';
+import Header from '../Header/Header';
+export const QuizContext = createContext([]);
 const MainLayout = () => {
+    const quizData = useLoaderData();
     return (
-        <div>
-            <Header></Header>
-            <Outlet></Outlet>
-        </div>
+            <QuizContext.Provider value={quizData}>
+                <Header></Header>
+                <Outlet></Outlet>
+            </QuizContext.Provider>
     );
 };
 

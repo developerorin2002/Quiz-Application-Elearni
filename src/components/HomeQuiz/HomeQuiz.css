@@ -1,0 +1,17 @@
+.card-bg{
+    background-color: #6c63ff;
+}
+
+.quiz-btn{
+    padding: 5px 25px;
+    background-color: #FD7E14;
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.st-icon{
+    color: #fff;
+    height: 30px;
+    width: 30px;
+}
