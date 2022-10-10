@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { toast } from 'react-toastify';
 import Option from '../Option/Option';
 import { QuizOptionContext } from '../Quiz/Quiz';
 import './Question.css'
@@ -15,9 +16,9 @@ const Question = ({questionMain}) => {
                 const correctAns = findQues.correctAnswer;
                 console.log(correctAns);
                 if(correctAns === value){
-                    console.log('correctAns')
+                    toast.success('Correct Answere',{autoClose:500})
                 }else{
-                    console.log('wrongAns');
+                    toast.warning('wrongAns' ,{autoClose:500})
                 }
                 
                 
