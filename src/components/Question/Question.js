@@ -31,7 +31,7 @@ const Question = ({questionMain}) => {
                 {/* load option */}
                 <div>
                         {
-                            options.map(opt=><Option handleValue={handleValue} id={id} opt={opt}></Option>)
+                            options.map(opt=><Option question={question} key={opt} handleValue={handleValue} id={id} opt={opt}></Option>)
                         }
                 </div>
             </div>

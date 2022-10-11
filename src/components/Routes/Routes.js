@@ -6,6 +6,7 @@ import Blog from "../Blog/Blog";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import Statistics from "../Statistics/Statistics";
 import { loadQuizData } from "../DataLoader/DataLoader";
+import MainQuiz from "../MainQuiz/MainQuiz";
 export const router = createBrowserRouter([{
     path:'/',
     element:<MainLayout></MainLayout>,
@@ -22,7 +23,8 @@ export const router = createBrowserRouter([{
         },
         {
             path:'/quiz',
-            element:<Quiz></Quiz>
+            element:<MainQuiz></MainQuiz>,
+            
         },
         {
             path:'/quiz/:id',
