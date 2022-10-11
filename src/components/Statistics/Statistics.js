@@ -5,7 +5,6 @@ import { QuizContext } from '../MainLayout/MainLayout';
 import './Statistics.css'
 const Statistics = () => {
     const quizData = useContext(QuizContext);
-    console.log(quizData);
     return (
         <div>
             <div className="container">
