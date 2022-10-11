@@ -4,3 +4,15 @@ LIVE WEBSITE LINK [Create React App](https://github.com/facebook/create-react-ap
 
 ## About This Project
 Markup : * This Is Mainly Quiz Focused Website 
+
+ Markup : * Bullet list
+              * Nested bullet
+                  * Sub-nested bullet etc
+          * Bullet list item 2
+
+-OR-
+
+ Markup : - Bullet list
+              - Nested bullet
+                  - Sub-nested bullet etc
+          - Bullet list item 2 
