@@ -1,3 +1,10 @@
 .qs-border{
     border: 1px solid #eaeaea;
 }
+.eye-slash{
+    height: 30px;
+    width: 30px;
+}
+.eye-slash{
+    cursor: pointer;
+}

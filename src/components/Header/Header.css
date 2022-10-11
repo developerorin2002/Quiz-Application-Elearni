@@ -7,5 +7,16 @@
 .custom-link > a {
     color: #fff;
     text-decoration: none;
-    margin-right: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.custom-link>a:hover{
+    color: green;
+}
+.activestyle{
+    text-decoration: underline;
+    margin-top: 10px;
+}
+.td-none{
+    text-decoration: none
 }
