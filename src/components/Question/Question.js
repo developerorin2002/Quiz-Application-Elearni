@@ -7,7 +7,6 @@ const Question = ({questionMain}) => {
     const quizData = useContext(QuizOptionContext);
     const allQuizData = quizData.data.questions;
     const handleValue = (value) =>{
-        console.log(value , id);
         if(value){
             const findQues = allQuizData.find(qs => qs.id === id);
             if(findQues){
@@ -17,7 +16,7 @@ const Question = ({questionMain}) => {
                 if(correctAns === value){
                     toast.success('Correct Answere',{autoClose:500})
                 }else{
-                    toast.error('wrongAnswere' ,{autoClose:500})
+                    toast.error('Wrong Answere' ,{autoClose:500})
                 }
             }
         }
@@ -30,7 +29,7 @@ const Question = ({questionMain}) => {
             <div className='qs-border'>
                 <h3 className='text-danger'>{question}</h3>
                 {/* load option */}
-                <div className='row'>
+                <div>
                         {
                             options.map(opt=><Option handleValue={handleValue} id={id} opt={opt}></Option>)
                         }
